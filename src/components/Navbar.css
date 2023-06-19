@@ -1,0 +1,87 @@
+.navbar{
+    background-color: var(--navbarBg);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 103px;
+    display: flex;
+    padding-left: 36px;
+    padding-right: 40px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    justify-content: space-between;
+    border-bottom: 0.01px solid gray;
+}
+.navbar__left{
+    display: flex;
+    align-items: center;
+
+}
+.navbar__left > h1{
+    font-family: clashDisplay;
+    color: var(--myYellow);
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 60px;
+}
+
+.navbar__left > ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    transition-duration: 200ms;
+    font-size: 14px;
+    transition: ease-in-out;
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar__left > ul {
+      display: none;
+    }
+  }
+
+.navbar__left > ul > li:hover {
+    cursor: pointer;
+    color: var(--myYellow);
+    scale: 1.1;
+    
+}
+
+.navbar__right{
+    display: flex;
+    gap: 47px;
+    align-items: center;
+}
+
+.navbar__right__setting, .navbar__right__notification{
+    cursor: pointer;
+    transition-duration: 200ms;
+    transition: ease-in-out;
+}
+
+.navbar__right__setting:hover{
+    scale: 1.1;
+}
+.navbar__right__notification:hover{
+    scale: 1.1;
+}
+
+.profilepic{
+    cursor: pointer;
+}
+.navbar__right__content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__right__notification__dot{
+    position: absolute;
+    right: 0;
+    top: -2px;
+    height: 4px;
+    width: 4px;
+}
+
+.navbar__left > ul > li:nth-child(5){
+    color: var(--myYellow);
+}
