@@ -4,6 +4,16 @@
 Deployed Website Link=> https://crackube-assignment.web.app
 
 
+## video demo:
+
+
+https://github.com/abhistark007/crackube-assignment/assets/58290134/fa74a25b-0b28-4d16-b836-18e917433980
+
+
+
+## Screenshots
+
+
 ![image](https://github.com/abhistark007/crackube-assignment/assets/58290134/8efb2b7c-4012-4b8d-9751-a5a59b54ebf6)
 
 
