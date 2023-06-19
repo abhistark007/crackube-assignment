@@ -14,5 +14,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
     
+}
+
+.maincontent__view__wrapper{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-items: flex-start;
 }

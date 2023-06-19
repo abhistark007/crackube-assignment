@@ -121,6 +121,7 @@ function MainContent() {
             <div onClick={handleSport}><TagButton txt={"Sport"} selected={sport}/></div>
             <div onClick={handleFood}><TagButton txt={"Food"} selected={food}/></div>
         </div>
+        <div className="maincontent__view__wrapper">
         <div className="maincontent__view">
             {
                 allVideos===null?<p style={{color:"white"}}>Loading</p>
@@ -137,6 +138,7 @@ function MainContent() {
                     }
                 </>)
             }
+        </div>
         </div>
 
     </div>
