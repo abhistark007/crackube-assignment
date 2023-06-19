@@ -11,6 +11,7 @@
     transition-duration: 300ms;
     cursor: pointer;
 }
+
 .videocard__col{
     width: 80%;
     height: 200px;
@@ -91,4 +92,9 @@ box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
     padding-right: 16px;
     cursor: pointer;
     width: fit-content;
+}
+
+.videocard__image{
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
 }

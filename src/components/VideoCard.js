@@ -5,7 +5,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 function VideoCard({thumbnail,tag,timestamp,title,description,gridView}) {
   return (
     <div className={`${gridView?"videocard":"videocard__col"}`}>
-        <img src={thumbnail} alt={title}/>
+        <img src={thumbnail} alt={title} className='videocard__image'/>
         <div className={`${gridView?"videocard__tag_and_time":"videocard__tag_and_time__col"}`}>
             <div className="videocard__tag">{tag}</div>
             <div className="videocard__time">{timestamp}</div>
