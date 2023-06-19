@@ -8,7 +8,13 @@ import r2 from '../assets/r2.svg';
 import r3 from '../assets/r3.svg';
 import r4 from '../assets/r4.svg';
 
-function Header() {
+function Header({gridView,setGridView}) {
+    const handleGrid=()=>{
+        setGridView(true);
+    }
+    const handleColView=()=>{
+        setGridView(false);
+    }
   return (
     <div className='header'>
         <h1>We tackle interesting topics every day</h1>
@@ -21,12 +27,12 @@ function Header() {
 
 
             <div className="header__bottom__right">
-                <div className="header__bottom__right__left">
+                <div className={`header__bottom__right__left ${gridView?"":"colView"}`} onClick={handleColView}>
                     <img src={l1} alt="vector 1" />
                     <img src={l2} alt="vector 2" />
                 </div>
 
-                <div className="header__bottom__right__right">
+                <div className={`header__bottom__right__right ${gridView?"gridView":""}`} onClick={handleGrid}>
                     <img src={r1} alt="vector 1" />
                     <img src={r2} alt="vector 2" />
                     <img src={r3} alt="vector 3" />

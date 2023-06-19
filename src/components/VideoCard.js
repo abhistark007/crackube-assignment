@@ -2,11 +2,11 @@ import React from 'react'
 import './VideoCard.css'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-function VideoCard({thumbnail,tag,timestamp,title,description}) {
+function VideoCard({thumbnail,tag,timestamp,title,description,gridView}) {
   return (
-    <div className='videocard'>
+    <div className={`${gridView?"videocard":"videocard__col"}`}>
         <img src={thumbnail} alt={title}/>
-        <div className="videocard__tag_and_time">
+        <div className={`${gridView?"videocard__tag_and_time":"videocard__tag_and_time__col"}`}>
             <div className="videocard__tag">{tag}</div>
             <div className="videocard__time">{timestamp}</div>
         </div>

@@ -11,6 +11,23 @@
     transition-duration: 300ms;
     cursor: pointer;
 }
+.videocard__col{
+    width: 80%;
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    background-color: #1D1F25;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    gap: 20px;
+    transition-duration: 300ms;
+}
+.videocard__col:hover{
+    -webkit-box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
+    -moz-box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
+    box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
+}
 .videocard:hover{
     -webkit-box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
 -moz-box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
@@ -28,6 +45,11 @@ box-shadow: 0px 0px 27px 10px rgba(255,187,41,1);
     padding-top: 20px;
     padding-bottom: 12px;
 
+}
+.videocard__tag_and_time__col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .videocard__tag{
     font-size: 14px;

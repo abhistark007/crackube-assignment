@@ -7,7 +7,7 @@ import listOfVideos from '../data';
 
 
 
-function MainContent() {
+function MainContent({gridView}) {
 
 
     const [allVideos,setAllVideos]=useState(null);
@@ -122,7 +122,7 @@ function MainContent() {
             <div onClick={handleFood}><TagButton txt={"Food"} selected={food}/></div>
         </div>
         <div className="maincontent__view__wrapper">
-        <div className="maincontent__view">
+        <div className={`${gridView?"maincontent__view":"maincontent__view__col"}`}>
             {
                 allVideos===null?<p style={{color:"white"}}>Loading</p>
                 :(<>
@@ -133,6 +133,7 @@ function MainContent() {
                             title={video.title}
                             description={video.description}
                             thumbnail={video.thumbnail}
+                            gridView={gridView}
                             />
                         })
                     }

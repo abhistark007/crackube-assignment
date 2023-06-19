@@ -72,8 +72,9 @@
     height: 43px;
     width: 43px;
     border-radius: 5px;
-    background-color: #FFBB29;
+    background-color: #282C38;
     position: relative;
+    
 }
 .header__bottom__right__right > img:nth-child(1){
     position: absolute;
@@ -102,3 +103,11 @@
         width: 70%;
     }
   }
+
+
+.gridView{
+    background-color: #FFBB29;
+}
+.colView{
+    background-color: #FFBB29;
+}
